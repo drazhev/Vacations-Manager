@@ -7,12 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "DetailsViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     return YES;
 }
 							
@@ -24,12 +25,16 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    VacationBook* generalBook = [VacationBook sharedBook];
+    for (Vacation* currentVacation in generalBook.availableVacations) {
+        currentVacation.price = [NSNumber numberWithFloat:[currentVacation.price intValue] * 6/5];
+    }
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+        [self.window setNeedsDisplay];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Grand Hotel Velingrad</string>
+		<key>location</key>
+		<string>Velingrad</string>
+		<key>price</key>
+		<integer>130</integer>
+		<key>openDays</key>
+		<array>
+			<string>Monday</string>
+			<string>Tuesday</string>
+			<string>Wednesday</string>
+			<string>Thursday</string>
+			<string>Friday</string>
+			<string>Saturday</string>
+			<string>Sunday</string>
+		</array>
+		<key>description</key>
+		<string>The town of Velingrad is located in a most picturesque valley of the Chepinska river at a height of 750 meters above sea level. The mild and lovely climate is a perfect addition to the beautiful nature around. Winter is not hard, summer cool while autumn is warmer than spring. The sun is shining in this town for the better part of the year. Velingrad is rich in mineral springs suitable for treatment of different diseases such as ones of the nervous system, gynaecological diseases, diseases of the lungs and
+many others. With its variety of the types of mineral springs Velingrad occupies the first place in Bulgaria. The area surrounding Velingrad is extremely lovely – deep pine-tree forests, beautiful meadows and crystal clear rivers.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Beklemeto</string>
+		<key>location</key>
+		<string>Troyan</string>
+		<key>price</key>
+		<integer>60</integer>
+		<key>openDays</key>
+		<array>
+			<string>Friday</string>
+			<string>Saturday</string>
+			<string>Sunday</string>
+			<string>Monday</string>
+		</array>
+		<key>description</key>
+		<string>Ловният дом се намира в планинския курортен комплекс Беклемето - 1360 м надморска височина, разположен в една от най- красивите части на Национален парк Централен Балкан, който е запазил очарованието и девствеността на дивата природа, предлага прекрасни възможности за активни развлечения и пълноценен отдих. Ловният дом е отлично място за активна почивка, бизнес срещи, семинари, тийм билдинг, приятелски и семейни тържества и почивки, зелени и бели училища, детски лагери. Курортът разполага с 2 км писти за алпийски ски, както и отлична писта за ски-бягане. Беклемето предлага удобни за зимни и летни преходи планински терени - от тук тръгват туристически маршрути към хижа &quot;Дерменка&quot;, хижа &quot;Козя стена&quot;, хижа &quot;Чучул&quot;, заслон &quot;Орлово гнездо&quot;, хижа &quot;Ехо&quot; и др.</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>0</integer>
+		<key>name</key>
+		<string>St. Mina</string>
+		<key>location</key>
+		<string>Sofia</string>
+		<key>price</key>
+		<integer>0</integer>
+		<key>openDays</key>
+		<array>
+			<string>Wednesday</string>
+			<string>Thursday</string>
+			<string>Friday</string>
+			<string>Saturday</string>
+			<string>Sunday</string>
+		</array>
+		<key>description</key>
+		<string>Mного чудеса са станали пред чудотворната иконата на свети Мина в Обрадовския манастир. Той се намира само на 7 километра североизточно от центъра на София, в квартал Бенковски. Местният свещеник и стопанин на обителта разказва, че голямата икона на свети мъченик Мина е източник на Божия милост.&quot;Не са един или двама изцелените тук. Знаете ли за какви чудеса зная - косите ви могат да настръхнат!&quot; - споделя отецът.&quot;От няколко години се опитваме да описваме чудните разкази. Хората не искат имената им да се знаят, но на драго сърце споделят, защото искат така да благодарят на Бога за милостта и да го прославят. Да,
+тук са се изцелявали от рак по молитвите на свети Мина. Но за мен е по-важно, че всички са се излекували от неверие и идват пак&quot;, разказва свещеникът.Жени от цялата страна идват да се помолят на светията да им помогне за рожба и сполучлив брак. Поклонниците казват, че иконата има могъща изцелителна сила и ако човек силно вярва, може да се избави от тежки болести.</string>
+	</dict>
+</array>
+</plist>

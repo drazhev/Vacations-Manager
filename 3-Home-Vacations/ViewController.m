@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -17,8 +18,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Categories";
+    VacationBook* generalBook = [VacationBook sharedBook];
+    NSString *initialVacationsPath = [[NSBundle mainBundle] pathForResource:@"InitialVacations" ofType:@"plist"];
+    NSArray *initialVacationsArray = [[NSArray alloc] initWithContentsOfFile:initialVacationsPath];
+    for (NSDictionary* currentVacation in initialVacationsArray) {
+        [generalBook addVacation: [[Vacation alloc] initWithType:[currentVacation[@"type"] intValue]name:currentVacation[@"name"] description:currentVacation[@"description"] openDays:currentVacation[@"openDays"] price:currentVacation[@"price"] andReviewCount:0]];
+    }
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,4 +36,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    VacationBook* currentBook = [VacationBook sharedBook];
+    if ([segue.identifier isEqualToString:@"monasteryType"]) {
+        currentBook.chosenType = Monastery;
+    }
+    else if ([segue.identifier isEqualToString:@"villaType"]) {
+        currentBook.chosenType = Villa;
+    }
+    else if ([segue.identifier isEqualToString:@"hotelType"]) {
+        currentBook.chosenType = Hotel;
+    }
+}
+
+
+- (void)dealloc {
+    [_monasteryButton release];
+    [super dealloc];
+}
 @end
