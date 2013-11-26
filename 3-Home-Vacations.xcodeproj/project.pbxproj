@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCFD548F1845072A0002E5B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD548E1845072A0002E5B0 /* Foundation.framework */; };
+		DCFD54911845072A0002E5B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD54901845072A0002E5B0 /* CoreGraphics.framework */; };
+		DCFD54931845072A0002E5B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD54921845072A0002E5B0 /* UIKit.framework */; };
+		DCFD54991845072A0002E5B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54971845072A0002E5B0 /* InfoPlist.strings */; };
+		DCFD549B1845072A0002E5B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD549A1845072A0002E5B0 /* main.m */; };
+		DCFD549F1845072A0002E5B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD549E1845072A0002E5B0 /* AppDelegate.m */; };
+		DCFD54A21845072A0002E5B0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54A01845072A0002E5B0 /* Main_iPhone.storyboard */; };
+		DCFD54A51845072A0002E5B0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54A31845072A0002E5B0 /* Main_iPad.storyboard */; };
+		DCFD54A81845072A0002E5B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD54A71845072A0002E5B0 /* ViewController.m */; };
+		DCFD54AA1845072A0002E5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54A91845072A0002E5B0 /* Images.xcassets */; };
+		DCFD54B11845072A0002E5B0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD54B01845072A0002E5B0 /* XCTest.framework */; };
+		DCFD54B21845072A0002E5B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD548E1845072A0002E5B0 /* Foundation.framework */; };
+		DCFD54B31845072A0002E5B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD54921845072A0002E5B0 /* UIKit.framework */; };
+		DCFD54BB1845072A0002E5B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54B91845072A0002E5B0 /* InfoPlist.strings */; };
+		DCFD54BD1845072B0002E5B0 /* __Home_VacationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD54BC1845072B0002E5B0 /* __Home_VacationsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCFD54B41845072A0002E5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCFD54831845072A0002E5B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCFD548A1845072A0002E5B0;
+			remoteInfo = "3-Home-Vacations";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCFD548B1845072A0002E5B0 /* 3-Home-Vacations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3-Home-Vacations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFD548E1845072A0002E5B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCFD54901845072A0002E5B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCFD54921845072A0002E5B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCFD54961845072A0002E5B0 /* 3-Home-Vacations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "3-Home-Vacations-Info.plist"; sourceTree = "<group>"; };
+		DCFD54981845072A0002E5B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCFD549A1845072A0002E5B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCFD549C1845072A0002E5B0 /* 3-Home-Vacations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3-Home-Vacations-Prefix.pch"; sourceTree = "<group>"; };
+		DCFD549D1845072A0002E5B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCFD549E1845072A0002E5B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCFD54A11845072A0002E5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DCFD54A41845072A0002E5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DCFD54A61845072A0002E5B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCFD54A71845072A0002E5B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCFD54A91845072A0002E5B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCFD54AF1845072A0002E5B0 /* 3-Home-VacationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3-Home-VacationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFD54B01845072A0002E5B0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DCFD54B81845072A0002E5B0 /* 3-Home-VacationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "3-Home-VacationsTests-Info.plist"; sourceTree = "<group>"; };
+		DCFD54BA1845072A0002E5B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCFD54BC1845072B0002E5B0 /* __Home_VacationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Home_VacationsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCFD54881845072A0002E5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFD54911845072A0002E5B0 /* CoreGraphics.framework in Frameworks */,
+				DCFD54931845072A0002E5B0 /* UIKit.framework in Frameworks */,
+				DCFD548F1845072A0002E5B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFD54AC1845072A0002E5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFD54B11845072A0002E5B0 /* XCTest.framework in Frameworks */,
+				DCFD54B31845072A0002E5B0 /* UIKit.framework in Frameworks */,
+				DCFD54B21845072A0002E5B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCFD54821845072A0002E5B0 = {
+			isa = PBXGroup;
+			children = (
+				DCFD54941845072A0002E5B0 /* 3-Home-Vacations */,
+				DCFD54B61845072A0002E5B0 /* 3-Home-VacationsTests */,
+				DCFD548D1845072A0002E5B0 /* Frameworks */,
+				DCFD548C1845072A0002E5B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCFD548C1845072A0002E5B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD548B1845072A0002E5B0 /* 3-Home-Vacations.app */,
+				DCFD54AF1845072A0002E5B0 /* 3-Home-VacationsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCFD548D1845072A0002E5B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD548E1845072A0002E5B0 /* Foundation.framework */,
+				DCFD54901845072A0002E5B0 /* CoreGraphics.framework */,
+				DCFD54921845072A0002E5B0 /* UIKit.framework */,
+				DCFD54B01845072A0002E5B0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCFD54941845072A0002E5B0 /* 3-Home-Vacations */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD549D1845072A0002E5B0 /* AppDelegate.h */,
+				DCFD549E1845072A0002E5B0 /* AppDelegate.m */,
+				DCFD54A01845072A0002E5B0 /* Main_iPhone.storyboard */,
+				DCFD54A31845072A0002E5B0 /* Main_iPad.storyboard */,
+				DCFD54A61845072A0002E5B0 /* ViewController.h */,
+				DCFD54A71845072A0002E5B0 /* ViewController.m */,
+				DCFD54A91845072A0002E5B0 /* Images.xcassets */,
+				DCFD54951845072A0002E5B0 /* Supporting Files */,
+			);
+			path = "3-Home-Vacations";
+			sourceTree = "<group>";
+		};
+		DCFD54951845072A0002E5B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD54961845072A0002E5B0 /* 3-Home-Vacations-Info.plist */,
+				DCFD54971845072A0002E5B0 /* InfoPlist.strings */,
+				DCFD549A1845072A0002E5B0 /* main.m */,
+				DCFD549C1845072A0002E5B0 /* 3-Home-Vacations-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCFD54B61845072A0002E5B0 /* 3-Home-VacationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD54BC1845072B0002E5B0 /* __Home_VacationsTests.m */,
+				DCFD54B71845072A0002E5B0 /* Supporting Files */,
+			);
+			path = "3-Home-VacationsTests";
+			sourceTree = "<group>";
+		};
+		DCFD54B71845072A0002E5B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD54B81845072A0002E5B0 /* 3-Home-VacationsTests-Info.plist */,
+				DCFD54B91845072A0002E5B0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCFD548A1845072A0002E5B0 /* 3-Home-Vacations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCFD54C01845072B0002E5B0 /* Build configuration list for PBXNativeTarget "3-Home-Vacations" */;
+			buildPhases = (
+				DCFD54871845072A0002E5B0 /* Sources */,
+				DCFD54881845072A0002E5B0 /* Frameworks */,
+				DCFD54891845072A0002E5B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "3-Home-Vacations";
+			productName = "3-Home-Vacations";
+			productReference = DCFD548B1845072A0002E5B0 /* 3-Home-Vacations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCFD54AE1845072A0002E5B0 /* 3-Home-VacationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCFD54C31845072B0002E5B0 /* Build configuration list for PBXNativeTarget "3-Home-VacationsTests" */;
+			buildPhases = (
+				DCFD54AB1845072A0002E5B0 /* Sources */,
+				DCFD54AC1845072A0002E5B0 /* Frameworks */,
+				DCFD54AD1845072A0002E5B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCFD54B51845072A0002E5B0 /* PBXTargetDependency */,
+			);
+			name = "3-Home-VacationsTests";
+			productName = "3-Home-VacationsTests";
+			productReference = DCFD54AF1845072A0002E5B0 /* 3-Home-VacationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCFD54831845072A0002E5B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alexander Drazhev";
+				TargetAttributes = {
+					DCFD54AE1845072A0002E5B0 = {
+						TestTargetID = DCFD548A1845072A0002E5B0;
+					};
+				};
+			};
+			buildConfigurationList = DCFD54861845072A0002E5B0 /* Build configuration list for PBXProject "3-Home-Vacations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCFD54821845072A0002E5B0;
+			productRefGroup = DCFD548C1845072A0002E5B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCFD548A1845072A0002E5B0 /* 3-Home-Vacations */,
+				DCFD54AE1845072A0002E5B0 /* 3-Home-VacationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCFD54891845072A0002E5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFD54A51845072A0002E5B0 /* Main_iPad.storyboard in Resources */,
+				DCFD54AA1845072A0002E5B0 /* Images.xcassets in Resources */,
+				DCFD54A21845072A0002E5B0 /* Main_iPhone.storyboard in Resources */,
+				DCFD54991845072A0002E5B0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFD54AD1845072A0002E5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFD54BB1845072A0002E5B0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCFD54871845072A0002E5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFD54A81845072A0002E5B0 /* ViewController.m in Sources */,
+				DCFD549F1845072A0002E5B0 /* AppDelegate.m in Sources */,
+				DCFD549B1845072A0002E5B0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFD54AB1845072A0002E5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFD54BD1845072B0002E5B0 /* __Home_VacationsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCFD54B51845072A0002E5B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCFD548A1845072A0002E5B0 /* 3-Home-Vacations */;
+			targetProxy = DCFD54B41845072A0002E5B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCFD54971845072A0002E5B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCFD54981845072A0002E5B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCFD54A01845072A0002E5B0 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCFD54A11845072A0002E5B0 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DCFD54A31845072A0002E5B0 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCFD54A41845072A0002E5B0 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DCFD54B91845072A0002E5B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCFD54BA1845072A0002E5B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCFD54BE1845072B0002E5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCFD54BF1845072B0002E5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCFD54C11845072B0002E5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3-Home-Vacations/3-Home-Vacations-Prefix.pch";
+				INFOPLIST_FILE = "3-Home-Vacations/3-Home-Vacations-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCFD54C21845072B0002E5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3-Home-Vacations/3-Home-Vacations-Prefix.pch";
+				INFOPLIST_FILE = "3-Home-Vacations/3-Home-Vacations-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCFD54C41845072B0002E5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/3-Home-Vacations.app/3-Home-Vacations";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3-Home-Vacations/3-Home-Vacations-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "3-Home-VacationsTests/3-Home-VacationsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DCFD54C51845072B0002E5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/3-Home-Vacations.app/3-Home-Vacations";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3-Home-Vacations/3-Home-Vacations-Prefix.pch";
+				INFOPLIST_FILE = "3-Home-VacationsTests/3-Home-VacationsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCFD54861845072A0002E5B0 /* Build configuration list for PBXProject "3-Home-Vacations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFD54BE1845072B0002E5B0 /* Debug */,
+				DCFD54BF1845072B0002E5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCFD54C01845072B0002E5B0 /* Build configuration list for PBXNativeTarget "3-Home-Vacations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFD54C11845072B0002E5B0 /* Debug */,
+				DCFD54C21845072B0002E5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCFD54C31845072B0002E5B0 /* Build configuration list for PBXNativeTarget "3-Home-VacationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFD54C41845072B0002E5B0 /* Debug */,
+				DCFD54C51845072B0002E5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCFD54831845072A0002E5B0 /* Project object */;
+}
