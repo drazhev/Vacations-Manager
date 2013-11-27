@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BrokerDelegate.h"
 
 typedef enum vacationType{
     Monastery,
@@ -23,9 +24,9 @@ typedef enum vacationType{
 @property (nonatomic, retain) NSMutableArray* openDays;
 @property (nonatomic, retain) NSNumber* price;
 @property (nonatomic) NSInteger reviewCount;
-@property (nonatomic, assign) id bookDelegate;
+@property (nonatomic, assign) id<BrokerDelegate> bookDelegate;
 
 // designated initializer
--(id) initWithType: (vacationType)type name: (NSString *)name description:(NSString *) description openDays: (NSMutableArray *)openDays price:(NSNumber *) price andReviewCount:(NSInteger) reviewCount;
+-(id) initWithType: (vacationType)type name: (NSString *)name description:(NSString *) description openDays: (NSMutableArray *)openDays andPrice:(NSNumber *) price;
 
 @end

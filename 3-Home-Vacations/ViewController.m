@@ -23,8 +23,13 @@
     NSString *initialVacationsPath = [[NSBundle mainBundle] pathForResource:@"InitialVacations" ofType:@"plist"];
     NSArray *initialVacationsArray = [[NSArray alloc] initWithContentsOfFile:initialVacationsPath];
     for (NSDictionary* currentVacation in initialVacationsArray) {
-        [generalBook addVacation: [[Vacation alloc] initWithType:[currentVacation[@"type"] intValue]name:currentVacation[@"name"] description:currentVacation[@"description"] openDays:currentVacation[@"openDays"] price:currentVacation[@"price"] andReviewCount:0]];
+        [generalBook addVacation: [[Vacation alloc] initWithType:[currentVacation[@"type"] intValue]name:currentVacation[@"name"] description:currentVacation[@"description"] openDays:currentVacation[@"openDays"] andPrice:currentVacation[@"price"]]];
     }
+//    Vacation* newVac = [Vacation new];
+//    newVac.name = @"Random";
+//    newVac.type = Monastery;
+//    newVac.price = [NSNumber numberWithInt:49];
+//    [generalBook addVacation:newVac];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

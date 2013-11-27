@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCAADF0F1846543D00DD355D /* GrandHotelVelingrad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCAADF0C1846543D00DD355D /* GrandHotelVelingrad.jpg */; };
+		DCAADF101846543D00DD355D /* SVMina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCAADF0D1846543D00DD355D /* SVMina.jpg */; };
+		DCAADF111846543D00DD355D /* Villa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCAADF0E1846543D00DD355D /* Villa.jpg */; };
+		DCAADF1318465B5F00DD355D /* niagaraFalls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCAADF1218465B5F00DD355D /* niagaraFalls.jpg */; };
 		DCCEA9F818453BE4005B4C20 /* InitialVacations.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCCEA9F718453BE4005B4C20 /* InitialVacations.plist */; };
 		DCFD548F1845072A0002E5B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD548E1845072A0002E5B0 /* Foundation.framework */; };
 		DCFD54911845072A0002E5B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD54901845072A0002E5B0 /* CoreGraphics.framework */; };
@@ -39,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCAADF0C1846543D00DD355D /* GrandHotelVelingrad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GrandHotelVelingrad.jpg; sourceTree = "<group>"; };
+		DCAADF0D1846543D00DD355D /* SVMina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SVMina.jpg; sourceTree = "<group>"; };
+		DCAADF0E1846543D00DD355D /* Villa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Villa.jpg; sourceTree = "<group>"; };
+		DCAADF1218465B5F00DD355D /* niagaraFalls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = niagaraFalls.jpg; sourceTree = "<group>"; };
+		DCAADF1418465D4A00DD355D /* BrokerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrokerDelegate.h; sourceTree = "<group>"; };
 		DCCEA9F718453BE4005B4C20 /* InitialVacations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InitialVacations.plist; sourceTree = "<group>"; };
 		DCFD548B1845072A0002E5B0 /* 3-Home-Vacations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3-Home-Vacations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFD548E1845072A0002E5B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +134,10 @@
 		DCFD54941845072A0002E5B0 /* 3-Home-Vacations */ = {
 			isa = PBXGroup;
 			children = (
+				DCAADF1218465B5F00DD355D /* niagaraFalls.jpg */,
+				DCAADF0C1846543D00DD355D /* GrandHotelVelingrad.jpg */,
+				DCAADF0D1846543D00DD355D /* SVMina.jpg */,
+				DCAADF0E1846543D00DD355D /* Villa.jpg */,
 				DCFD549D1845072A0002E5B0 /* AppDelegate.h */,
 				DCFD549E1845072A0002E5B0 /* AppDelegate.m */,
 				DCFD54A01845072A0002E5B0 /* Main_iPhone.storyboard */,
@@ -139,6 +152,7 @@
 				DCFD54CA18450B7B0002E5B0 /* VacationBook.m */,
 				DCFD54CC18451DCC0002E5B0 /* DetailsViewController.h */,
 				DCFD54CD18451DCC0002E5B0 /* DetailsViewController.m */,
+				DCAADF1418465D4A00DD355D /* BrokerDelegate.h */,
 			);
 			path = "3-Home-Vacations";
 			sourceTree = "<group>";
@@ -249,11 +263,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAADF111846543D00DD355D /* Villa.jpg in Resources */,
+				DCAADF0F1846543D00DD355D /* GrandHotelVelingrad.jpg in Resources */,
+				DCAADF1318465B5F00DD355D /* niagaraFalls.jpg in Resources */,
 				DCFD54A51845072A0002E5B0 /* Main_iPad.storyboard in Resources */,
 				DCFD54AA1845072A0002E5B0 /* Images.xcassets in Resources */,
 				DCCEA9F818453BE4005B4C20 /* InitialVacations.plist in Resources */,
 				DCFD54A21845072A0002E5B0 /* Main_iPhone.storyboard in Resources */,
 				DCFD54991845072A0002E5B0 /* InfoPlist.strings in Resources */,
+				DCAADF101846543D00DD355D /* SVMina.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
