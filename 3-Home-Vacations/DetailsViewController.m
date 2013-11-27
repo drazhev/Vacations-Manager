@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    @autoreleasepool {
     NSArray *vacationTypeStrings = @[@"Monastery", @"Villa", @"Hotel"];
     VacationBook* generalBook = [VacationBook sharedBook];
     self.latestVacation = [generalBook latestVacation];
@@ -54,8 +55,8 @@
             currentImagePath = @"niagaraFalls.jpg";
         }
         UIImage* currentImage = [UIImage imageNamed:currentImagePath];
+        // no need to call release on currentImagePath because it is created as a compile-time constant
         [self.vacationImageView setImage:currentImage];
-        [currentImage release];
     }
     
     if(&UIApplicationWillEnterForegroundNotification) {
@@ -63,7 +64,7 @@
         [notificationCenter addObserver:self selector:@selector(enteredForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
     }
     
-    
+    }
 	// Do any additional setup after loading the view.
 }
 
@@ -86,6 +87,7 @@
         [self.latestVacation.bookDelegate goOnVacation:self.latestVacation];
         resultMessage = @"Vacation was successfully booked!";
     }
+    // no need to call release on resultMessage because it is created as a compile-time constant
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
                                                     message:resultMessage
                                                    delegate:nil
@@ -97,14 +99,16 @@
 
 
 - (BOOL) isVacation: (Vacation *) vacation openForDate: (NSDate*) date {
-    NSDateFormatter *weekday = [[[NSDateFormatter alloc] init] autorelease];
+    NSDateFormatter *weekday = [[NSDateFormatter alloc] init];
     [weekday setDateFormat: @"EEEE"];
 
     for (NSString* weekDay in self.latestVacation.openDays) {
         if ([[weekday stringFromDate:date] isEqualToString:weekDay]) {
+            [weekday release];
             return YES;
         }
     }
+    [weekday release];
     return NO;
 }
 
@@ -128,11 +132,11 @@
 }
 
 - (void)dealloc {
+    [_latestVacation release];
     [_vacationNameLabel release];
     [_vacationPriceLabel release];
     [_vacationTypeLabel release];
     [_vacationDescriptionField release];
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [_vacationImageView release];
     [super dealloc];
 }

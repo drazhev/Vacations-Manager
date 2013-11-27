@@ -20,7 +20,7 @@
 		DCFD549F1845072A0002E5B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD549E1845072A0002E5B0 /* AppDelegate.m */; };
 		DCFD54A21845072A0002E5B0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54A01845072A0002E5B0 /* Main_iPhone.storyboard */; };
 		DCFD54A51845072A0002E5B0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54A31845072A0002E5B0 /* Main_iPad.storyboard */; };
-		DCFD54A81845072A0002E5B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD54A71845072A0002E5B0 /* ViewController.m */; };
+		DCFD54A81845072A0002E5B0 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD54A71845072A0002E5B0 /* CategoriesViewController.m */; };
 		DCFD54AA1845072A0002E5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCFD54A91845072A0002E5B0 /* Images.xcassets */; };
 		DCFD54B11845072A0002E5B0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD54B01845072A0002E5B0 /* XCTest.framework */; };
 		DCFD54B21845072A0002E5B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFD548E1845072A0002E5B0 /* Foundation.framework */; };
@@ -61,8 +61,8 @@
 		DCFD549E1845072A0002E5B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DCFD54A11845072A0002E5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DCFD54A41845072A0002E5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DCFD54A61845072A0002E5B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DCFD54A71845072A0002E5B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCFD54A61845072A0002E5B0 /* CategoriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		DCFD54A71845072A0002E5B0 /* CategoriesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
 		DCFD54A91845072A0002E5B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCFD54AF1845072A0002E5B0 /* 3-Home-VacationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3-Home-VacationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFD54B01845072A0002E5B0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -101,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCAADF1518467B7F00DD355D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DCAADF1218465B5F00DD355D /* niagaraFalls.jpg */,
+				DCAADF0C1846543D00DD355D /* GrandHotelVelingrad.jpg */,
+				DCAADF0D1846543D00DD355D /* SVMina.jpg */,
+				DCAADF0E1846543D00DD355D /* Villa.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		DCFD54821845072A0002E5B0 = {
 			isa = PBXGroup;
 			children = (
@@ -134,16 +145,13 @@
 		DCFD54941845072A0002E5B0 /* 3-Home-Vacations */ = {
 			isa = PBXGroup;
 			children = (
-				DCAADF1218465B5F00DD355D /* niagaraFalls.jpg */,
-				DCAADF0C1846543D00DD355D /* GrandHotelVelingrad.jpg */,
-				DCAADF0D1846543D00DD355D /* SVMina.jpg */,
-				DCAADF0E1846543D00DD355D /* Villa.jpg */,
+				DCAADF1518467B7F00DD355D /* Images */,
 				DCFD549D1845072A0002E5B0 /* AppDelegate.h */,
 				DCFD549E1845072A0002E5B0 /* AppDelegate.m */,
 				DCFD54A01845072A0002E5B0 /* Main_iPhone.storyboard */,
 				DCFD54A31845072A0002E5B0 /* Main_iPad.storyboard */,
-				DCFD54A61845072A0002E5B0 /* ViewController.h */,
-				DCFD54A71845072A0002E5B0 /* ViewController.m */,
+				DCFD54A61845072A0002E5B0 /* CategoriesViewController.h */,
+				DCFD54A71845072A0002E5B0 /* CategoriesViewController.m */,
 				DCFD54A91845072A0002E5B0 /* Images.xcassets */,
 				DCFD54951845072A0002E5B0 /* Supporting Files */,
 				DCFD54C6184507DA0002E5B0 /* Vacation.h */,
@@ -291,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFD54CB18450B7B0002E5B0 /* VacationBook.m in Sources */,
-				DCFD54A81845072A0002E5B0 /* ViewController.m in Sources */,
+				DCFD54A81845072A0002E5B0 /* CategoriesViewController.m in Sources */,
 				DCFD549F1845072A0002E5B0 /* AppDelegate.m in Sources */,
 				DCFD54CE18451DCC0002E5B0 /* DetailsViewController.m in Sources */,
 				DCFD54C8184507DA0002E5B0 /* Vacation.m in Sources */,

@@ -7,13 +7,36 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "CategoriesViewController.h"
 #import "DetailsViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    if ([prefs integerForKey:@"runCount"]) {
+        [prefs setInteger:[prefs integerForKey:@"runCount"] + 1 forKey:@"runCount"];
+    }
+    else {
+        [prefs setInteger:1 forKey:@"runCount"];
+    }
+    [prefs synchronize];
+    
+    VacationBook* generalBook = [VacationBook sharedBook];
+    
+    NSString *initialVacationsPath = [[NSBundle mainBundle] pathForResource:@"InitialVacations" ofType:@"plist"];
+    NSArray *initialVacationsArray = [[NSArray alloc] initWithContentsOfFile:initialVacationsPath];
+    for (NSDictionary* currentVacation in initialVacationsArray) {
+        Vacation* vacationToBeAdded = [[Vacation alloc] initWithType:[currentVacation[@"type"] intValue]name:currentVacation[@"name"] description:currentVacation[@"description"] location: currentVacation[@"location"] openDays:currentVacation[@"openDays"] andPrice:currentVacation[@"price"]];
+        [generalBook addVacation: vacationToBeAdded];
+        [vacationToBeAdded release];
+    }
+    [initialVacationsArray release];
+    
+    for (int i = 0; i < [prefs integerForKey:@"runCount"] - 1; i++) {
+        [generalBook addVacation: [generalBook generateVacation]];
+    }
     return YES;
 }
 							
@@ -34,7 +57,6 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-        [self.window setNeedsDisplay];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

@@ -10,7 +10,6 @@
 #import "DetailsViewController.h"
 #import "VacationBook.h"
 
-@interface ViewController : UIViewController
-@property (retain, nonatomic) IBOutlet UIButton *monasteryButton;
+@interface CategoriesViewController : UIViewController
 
 @end

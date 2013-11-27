@@ -6,31 +6,20 @@
 //  Copyright (c) 2013 Alexander Drazhev. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CategoriesViewController.h"
 
 
-@interface ViewController ()
+@interface CategoriesViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CategoriesViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Categories";
-    VacationBook* generalBook = [VacationBook sharedBook];
-    NSString *initialVacationsPath = [[NSBundle mainBundle] pathForResource:@"InitialVacations" ofType:@"plist"];
-    NSArray *initialVacationsArray = [[NSArray alloc] initWithContentsOfFile:initialVacationsPath];
-    for (NSDictionary* currentVacation in initialVacationsArray) {
-        [generalBook addVacation: [[Vacation alloc] initWithType:[currentVacation[@"type"] intValue]name:currentVacation[@"name"] description:currentVacation[@"description"] openDays:currentVacation[@"openDays"] andPrice:currentVacation[@"price"]]];
-    }
-//    Vacation* newVac = [Vacation new];
-//    newVac.name = @"Random";
-//    newVac.type = Monastery;
-//    newVac.price = [NSNumber numberWithInt:49];
-//    [generalBook addVacation:newVac];
     
+    self.title = @"Categories";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -56,7 +45,6 @@
 
 
 - (void)dealloc {
-    [_monasteryButton release];
     [super dealloc];
 }
 @end

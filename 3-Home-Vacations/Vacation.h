@@ -21,12 +21,13 @@ typedef enum vacationType{
 @property (nonatomic) vacationType type;
 @property (nonatomic, copy) NSString* name;
 @property (nonatomic, copy) NSString* description;
+@property (nonatomic, copy) NSString* location;
 @property (nonatomic, retain) NSMutableArray* openDays;
 @property (nonatomic, retain) NSNumber* price;
 @property (nonatomic) NSInteger reviewCount;
 @property (nonatomic, assign) id<BrokerDelegate> bookDelegate;
 
 // designated initializer
--(id) initWithType: (vacationType)type name: (NSString *)name description:(NSString *) description openDays: (NSMutableArray *)openDays andPrice:(NSNumber *) price;
+-(id) initWithType: (vacationType)type name: (NSString *)name description:(NSString *) description location:(NSString *) location openDays: (NSMutableArray *)openDays andPrice:(NSNumber *) price;
 
 @end
