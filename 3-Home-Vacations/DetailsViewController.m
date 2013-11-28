@@ -9,7 +9,7 @@
 #import "DetailsViewController.h"
 
 @interface DetailsViewController ()
-
+@property (retain, nonatomic) Vacation *latestVacation;
 @end
 
 @implementation DetailsViewController

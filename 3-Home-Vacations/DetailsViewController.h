@@ -12,7 +12,6 @@
 
 @interface DetailsViewController : UIViewController <BrokerDelegate>
 
-@property (retain, nonatomic) Vacation *latestVacation;
 @property (retain, nonatomic) IBOutlet UILabel *vacationNameLabel;
 @property (retain, nonatomic) IBOutlet UILabel *vacationPriceLabel;
 @property (retain, nonatomic) IBOutlet UILabel *vacationTypeLabel;
