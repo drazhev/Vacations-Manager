@@ -78,7 +78,7 @@
     NSMutableArray* weekDays = [NSMutableArray arrayWithObjects: @"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", @"Sunday", nil];
     Vacation* randomVacation = [Vacation new];
     NSInteger descriptionLength = arc4random() % 700 + 300;
-    NSInteger nameLength = arc4random() % 15 + 5;
+    NSInteger nameLength = arc4random() % 10 + 5;
     NSInteger locationLength = arc4random() % 12 + 8;
     NSInteger openDaysCount = arc4random() % 7 + 1;
     randomVacation.type = arc4random() % 3;

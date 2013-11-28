@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    @autoreleasepool {
     NSArray *vacationTypeStrings = @[@"Monastery", @"Villa", @"Hotel"];
     VacationBook* generalBook = [VacationBook sharedBook];
     self.latestVacation = [generalBook latestVacation];
@@ -64,17 +63,15 @@
         [notificationCenter addObserver:self selector:@selector(enteredForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
     }
     
-    }
 	// Do any additional setup after loading the view.
 }
 
 -(void) enteredForeground: (NSNotification*) not {
     self.vacationPriceLabel.text = [NSString stringWithFormat:@"%.1f",[self.latestVacation.price doubleValue]];
-
+    
 }
 
 - (IBAction)bookButtonTapped:(id)sender {
-
     VacationBook* generalBook = [VacationBook sharedBook];
     NSString* resultMessage;
     if ([generalBook.bookedVacations containsObject:self.latestVacation]) {
@@ -98,10 +95,11 @@
 }
 
 
+
 - (BOOL) isVacation: (Vacation *) vacation openForDate: (NSDate*) date {
     NSDateFormatter *weekday = [[NSDateFormatter alloc] init];
     [weekday setDateFormat: @"EEEE"];
-
+    
     for (NSString* weekDay in self.latestVacation.openDays) {
         if ([[weekday stringFromDate:date] isEqualToString:weekDay]) {
             [weekday release];
@@ -138,6 +136,7 @@
     [_vacationTypeLabel release];
     [_vacationDescriptionField release];
     [_vacationImageView release];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [super dealloc];
 }
 @end
